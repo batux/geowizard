@@ -8,3 +8,10 @@ GeoWizard uses native Javascript and Google Maps JS library to export or import 
 
 * Google Map Javascript API
 
+## Screenshots about sample project which uses GeoWizard JS 1.0
+
+![1](https://user-images.githubusercontent.com/2838457/31579507-ad828a6a-b140-11e7-8c8e-de8e8c17f9b3.png)
+![2](https://user-images.githubusercontent.com/2838457/31579508-ada7ec60-b140-11e7-9cdd-ff6c00fd99c4.png)
+![3](https://user-images.githubusercontent.com/2838457/31579509-add44378-b140-11e7-8949-ab0e1b3485b4.png)
+![4](https://user-images.githubusercontent.com/2838457/31579510-adfc307c-b140-11e7-847c-1cf660b976cb.png)
+![5](https://user-images.githubusercontent.com/2838457/31579511-ae25b37a-b140-11e7-8736-e0a128701045.png)
