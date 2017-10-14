@@ -274,13 +274,13 @@ var geoWizard = (function() {
 	}
 	
 	
-	// API
+	// Exported API Function
 	self.useDefaultMap = function() {
 		self.map = new google.maps.Map(document.getElementById('map'), self.mapOptions);
 		self.bindDrawingManagerToMap(self.map);
 	}
 	
-	// API
+	// Exported API Function
 	self.bindDrawingManagerToMap = function(map) {
 		
 		self.setMap(map);
@@ -292,7 +292,7 @@ var geoWizard = (function() {
 		google.maps.event.addListener(self.drawingManager, 'overlaycomplete', self.drawingCallback);
 	}
 	
-	// API
+	// Exported API Function
 	self.exportGeoJsonFromDataLayer = function(exportCallback, map) {
 		
 		if(!map) {
@@ -311,7 +311,7 @@ var geoWizard = (function() {
 		});
 	}
 	
-	// API
+	// Exported API Function
 	self.importGeoJsonFromDataLayer = function(geoJsonAsText, map) {
 		
 		if(!map) {
@@ -329,7 +329,7 @@ var geoWizard = (function() {
 	    map.data.addGeoJson(response.featureList)
 	}
 	
-	// API
+	// Exported API Function
 	self.generateFeatureListFromGeoJson = function(geoJsonAsText) {
 		
 		if(!geoJsonAsText) {
@@ -355,12 +355,12 @@ var geoWizard = (function() {
 		return response;
 	}
 	
-	// API
+	// Exported API Function
 	self.prepareDrawedGeometriesFromMap = function() {
 		return self.drawingManagerConfiguration.geometryBag;
 	}
 	
-	// API
+	// Exported API Function
 	self.prepareFeaturesFromDataLayer = function(featureResultCallback, map) {
 		
 		if(featureResultCallback) {
@@ -379,7 +379,7 @@ var geoWizard = (function() {
 		}
 	}
 	
-	// API
+	// Exported API Function
 	self.clearMapGeometries = function(map) {
 		
 		if(!map) {
@@ -393,7 +393,7 @@ var geoWizard = (function() {
 		self.clearAllFeaturesFromDataLayer(map);
 	}
 	
-	// API
+	// Exported API Function
 	self.saveDrawingProject = function(geoJsonAsText, storageType) {
 		
 		if(storageType == self.StorageType.WEB_SQL) {
@@ -419,7 +419,7 @@ var geoWizard = (function() {
 		}
 	}
 	
-	// API
+	// Exported API Function
 	self.queryLastDrawingProjectFromDatabase = function(resultCallback) {
 		
 		var queryResultCallback = function (transaction, results) {
@@ -432,7 +432,7 @@ var geoWizard = (function() {
 		self.selectFromDatabase('SELECT * FROM drawing_project ORDER BY id ASC LIMIT 1', [], queryResultCallback);
 	}
 	
-	// API
+	// Exported API Function
 	self.queryAllDrawingProjectsFromDatabase = function(resultCallback) {
 		
 		var queryResultCallback = function (transaction, results) {
@@ -446,7 +446,7 @@ var geoWizard = (function() {
 	}
 	
 	
-	// API
+	// Exported API Function
 	self.queryLocalStorageGuidsFromDatabase = function(resultCallback) {
 		
 		var queryResultCallback = function (transaction, results) {
